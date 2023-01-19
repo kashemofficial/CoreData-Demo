@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentTableViewCell" rowHeight="118" id="KGk-i7-Jjw" customClass="StudentTableViewCell" customModule="CoreData_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MD Abul Kashem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-yb-jsM">
+                        <rect key="frame" x="10" y="5" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kashem165110@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCY-rW-OSX">
+                        <rect key="frame" x="10" y="83" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandpur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-CV-Ypb">
+                        <rect key="frame" x="10" y="57" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqG-J7-FGd">
+                        <rect key="frame" x="10" y="31" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UCY-rW-OSX" firstAttribute="leading" secondItem="IqD-yb-jsM" secondAttribute="leading" id="1Sc-u7-Tch"/>
+                    <constraint firstItem="9bc-CV-Ypb" firstAttribute="trailing" secondItem="IqD-yb-jsM" secondAttribute="trailing" id="3n5-US-b5O"/>
+                    <constraint firstItem="IqD-yb-jsM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4Qh-fE-38Y"/>
+                    <constraint firstItem="iqG-J7-FGd" firstAttribute="top" secondItem="IqD-yb-jsM" secondAttribute="bottom" constant="5" id="4j7-z3-aW0"/>
+                    <constraint firstItem="IqD-yb-jsM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Amx-gU-e5r"/>
+                    <constraint firstItem="9bc-CV-Ypb" firstAttribute="leading" secondItem="IqD-yb-jsM" secondAttribute="leading" id="Sne-lc-zqU"/>
+                    <constraint firstAttribute="trailing" secondItem="IqD-yb-jsM" secondAttribute="trailing" constant="10" id="arm-en-5tP"/>
+                    <constraint firstItem="iqG-J7-FGd" firstAttribute="leading" secondItem="IqD-yb-jsM" secondAttribute="leading" id="euC-W7-9sU"/>
+                    <constraint firstItem="9bc-CV-Ypb" firstAttribute="top" secondItem="iqG-J7-FGd" secondAttribute="bottom" constant="5" id="ghw-pD-edV"/>
+                    <constraint firstItem="UCY-rW-OSX" firstAttribute="trailing" secondItem="IqD-yb-jsM" secondAttribute="trailing" id="iP4-CW-eZm"/>
+                    <constraint firstItem="UCY-rW-OSX" firstAttribute="top" secondItem="9bc-CV-Ypb" secondAttribute="bottom" constant="5" id="uD5-xs-3zm"/>
+                    <constraint firstItem="iqG-J7-FGd" firstAttribute="trailing" secondItem="IqD-yb-jsM" secondAttribute="trailing" id="x9Q-Sb-v2f"/>
+                    <constraint firstAttribute="bottom" secondItem="UCY-rW-OSX" secondAttribute="bottom" constant="14" id="xe5-lt-ga2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collageNameLabel" destination="iqG-J7-FGd" id="NNU-mJ-gtv"/>
+                <outlet property="studentAddressNameLabel" destination="9bc-CV-Ypb" id="zYj-2h-ah8"/>
+                <outlet property="studentEmailLabel" destination="UCY-rW-OSX" id="owc-qc-kGd"/>
+                <outlet property="studentNameLabel" destination="IqD-yb-jsM" id="hTd-IQ-UjV"/>
+            </connections>
+            <point key="canvasLocation" x="80.152671755725194" y="41.549295774647888"/>
+        </tableViewCell>
+    </objects>
+</document>
