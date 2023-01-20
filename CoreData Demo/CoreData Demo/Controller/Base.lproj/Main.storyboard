@@ -58,6 +58,105 @@
             </objects>
             <point key="canvasLocation" x="717" y="-2"/>
         </scene>
+        <!--Student Details View Controller-->
+        <scene sceneID="hyW-Hj-Exr">
+            <objects>
+                <viewController storyboardIdentifier="StudentDetailsViewController" id="jPM-Cq-YhX" customClass="StudentDetailsViewController" customModule="CoreData_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HqL-wI-vTV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CollageName      : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zG3-ez-2T1">
+                                <rect key="frame" x="10" y="140" width="137.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StudentAddress : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrI-K7-pQq">
+                                <rect key="frame" x="10" y="171" width="137.66666666666666" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StudentEmail      : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sU-to-Bbu">
+                                <rect key="frame" x="10" y="201.33333333333334" width="137.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MD Abul Kashem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zso-uP-Ukd">
+                                <rect key="frame" x="152.66666666666666" y="109" width="130.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBPI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKN-GR-CQj">
+                                <rect key="frame" x="152.66666666666666" y="140" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kashem165110@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI2-HP-dXo">
+                                <rect key="frame" x="152.66666666666663" y="201.33333333333334" width="205.33333333333337" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StudentName     : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGo-6C-xN5">
+                                <rect key="frame" x="10" y="109" width="137.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chandpur,Dhaka,Bangladesh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3k-SH-BXU">
+                                <rect key="frame" x="152.66666666666669" y="171" width="220.66666666666669" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nWr-D9-6NE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zG3-ez-2T1" firstAttribute="trailing" secondItem="uGo-6C-xN5" secondAttribute="trailing" id="69F-w0-LT0"/>
+                            <constraint firstItem="XKN-GR-CQj" firstAttribute="top" secondItem="Zso-uP-Ukd" secondAttribute="bottom" constant="10" id="6eD-4h-sor"/>
+                            <constraint firstItem="PI2-HP-dXo" firstAttribute="top" secondItem="4sU-to-Bbu" secondAttribute="top" id="81r-id-2E5"/>
+                            <constraint firstItem="nWr-D9-6NE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XKN-GR-CQj" secondAttribute="trailing" constant="10" id="AbJ-dx-ECj"/>
+                            <constraint firstItem="uGo-6C-xN5" firstAttribute="top" secondItem="nWr-D9-6NE" secondAttribute="top" constant="50" id="Che-ug-zKl"/>
+                            <constraint firstItem="4sU-to-Bbu" firstAttribute="trailing" secondItem="uGo-6C-xN5" secondAttribute="trailing" id="DbH-Qt-ua0"/>
+                            <constraint firstItem="nWr-D9-6NE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="c3k-SH-BXU" secondAttribute="trailing" constant="10" id="Ero-dg-GOB"/>
+                            <constraint firstItem="Zso-uP-Ukd" firstAttribute="leading" secondItem="uGo-6C-xN5" secondAttribute="trailing" constant="5" id="Ods-TH-ASL"/>
+                            <constraint firstItem="Zso-uP-Ukd" firstAttribute="top" secondItem="uGo-6C-xN5" secondAttribute="top" id="P3U-Za-erY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zso-uP-Ukd" secondAttribute="trailing" constant="10" id="Q8W-IT-B7m"/>
+                            <constraint firstItem="yrI-K7-pQq" firstAttribute="top" secondItem="zG3-ez-2T1" secondAttribute="bottom" constant="10" id="Qdf-8g-mZS"/>
+                            <constraint firstItem="4sU-to-Bbu" firstAttribute="top" secondItem="yrI-K7-pQq" secondAttribute="bottom" constant="10" id="Qfx-g0-5Dv"/>
+                            <constraint firstItem="XKN-GR-CQj" firstAttribute="top" secondItem="zG3-ez-2T1" secondAttribute="top" id="RfI-hb-zZo"/>
+                            <constraint firstItem="yrI-K7-pQq" firstAttribute="trailing" secondItem="uGo-6C-xN5" secondAttribute="trailing" id="TA1-hu-0Fh"/>
+                            <constraint firstItem="c3k-SH-BXU" firstAttribute="leading" secondItem="yrI-K7-pQq" secondAttribute="trailing" constant="5" id="UCZ-cT-p7D"/>
+                            <constraint firstItem="uGo-6C-xN5" firstAttribute="leading" secondItem="nWr-D9-6NE" secondAttribute="leading" constant="10" id="VWb-vT-3iY"/>
+                            <constraint firstItem="PI2-HP-dXo" firstAttribute="leading" secondItem="4sU-to-Bbu" secondAttribute="trailing" constant="5" id="Y9i-XW-aEo"/>
+                            <constraint firstItem="zG3-ez-2T1" firstAttribute="leading" secondItem="uGo-6C-xN5" secondAttribute="leading" id="aWU-ox-fGl"/>
+                            <constraint firstItem="nWr-D9-6NE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PI2-HP-dXo" secondAttribute="trailing" constant="10" id="bLB-Co-OAC"/>
+                            <constraint firstItem="c3k-SH-BXU" firstAttribute="top" secondItem="yrI-K7-pQq" secondAttribute="top" id="bbk-b3-Zt9"/>
+                            <constraint firstItem="XKN-GR-CQj" firstAttribute="leading" secondItem="zG3-ez-2T1" secondAttribute="trailing" constant="5" id="kDG-iE-ldm"/>
+                            <constraint firstItem="c3k-SH-BXU" firstAttribute="top" secondItem="XKN-GR-CQj" secondAttribute="bottom" constant="10" id="np8-SL-dZV"/>
+                            <constraint firstItem="zG3-ez-2T1" firstAttribute="top" secondItem="uGo-6C-xN5" secondAttribute="bottom" constant="10" id="qNU-Uw-F51"/>
+                            <constraint firstItem="yrI-K7-pQq" firstAttribute="leading" secondItem="uGo-6C-xN5" secondAttribute="leading" id="qfK-5r-hlq"/>
+                            <constraint firstItem="PI2-HP-dXo" firstAttribute="top" secondItem="c3k-SH-BXU" secondAttribute="bottom" constant="10" id="usC-Pa-5Bd"/>
+                            <constraint firstItem="4sU-to-Bbu" firstAttribute="leading" secondItem="uGo-6C-xN5" secondAttribute="leading" id="vME-2T-JY8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="studentAddressLabel" destination="c3k-SH-BXU" id="ULv-rz-TL9"/>
+                        <outlet property="studentCollageLabel" destination="XKN-GR-CQj" id="5Sa-51-cIq"/>
+                        <outlet property="studentEmailLabel" destination="PI2-HP-dXo" id="ojE-Nc-ubs"/>
+                        <outlet property="studentNameLabel" destination="Zso-uP-Ukd" id="KXb-hT-mil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXT-ih-t04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342.74809160305341" y="682.3943661971831"/>
+        </scene>
         <!--Student Add View Controller-->
         <scene sceneID="Q3v-YV-XQk">
             <objects>

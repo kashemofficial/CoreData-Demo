@@ -20,12 +20,8 @@ class StudentTableViewCell: UITableViewCell {
             collageNameLabel.text = "Collage : \(student?.collage ?? "")"
             studentAddressNameLabel.text = "Address : \(student?.address ?? "")"
             studentEmailLabel.text = "Email : \(student?.email ?? "")"
-
         }
     }
-    
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()

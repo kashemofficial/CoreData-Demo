@@ -26,6 +26,7 @@ class StudentAddViewController: UIViewController {
     //MARK: Action
     @IBAction func saveButtonAction(_ sender: UIButton) {
         self.studentSaveData()
+        self.navigationController?.popViewController(animated: true)
     }
     
 }
@@ -39,15 +40,13 @@ extension StudentAddViewController{
         guard let studentAddress = studentAddressTextField.text else{return}
         guard let studentEmail = studentEmailTextField.text else{return}
      
-        var studentDict = [
+        let studentDict = [
             "studentName" : studentName,
             "collageName" : collageName,
             "studentAddress" : studentAddress,
             "studentEmail" : studentEmail
         ]
-        
         DatabaseHelper.shareInstance.saveStudentData(studentDict: studentDict)
-        
     }
     
 }

@@ -42,18 +42,33 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrStudent.count
-       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentTableViewCell") as! StudentTableViewCell
         cell.student = arrStudent[indexPath.row]
         return cell
-        
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let studentDetailVC = storyboard?.instantiateViewController(withIdentifier: "StudentDetailsViewController") as! StudentDetailsViewController
+        studentDetailVC.studentDetails = arrStudent[indexPath.row]
+        self.navigationController?.pushViewController(studentDetailVC, animated: true)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            arrStudent = DatabaseHelper.shareInstance.deleteStudentData(index: indexPath.row)
+            self.studentListTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 }
