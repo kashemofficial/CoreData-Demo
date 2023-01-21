@@ -7,12 +7,13 @@
 
 import UIKit
 
-class StudentDetailsViewController: UIViewController {
+class StudentDetailsViewController: UITableViewController {
     @IBOutlet weak var studentNameLabel: UILabel!
     @IBOutlet weak var studentCollageLabel: UILabel!
     @IBOutlet weak var studentAddressLabel: UILabel!
     @IBOutlet weak var studentEmailLabel: UILabel!
     var studentDetails: Student?
+    var indexRow = Int()
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -24,5 +25,21 @@ class StudentDetailsViewController: UIViewController {
         studentAddressLabel.text = studentDetails?.address
         studentEmailLabel.text = studentDetails?.email
     }
+    
+    @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func editButtonAction(_ sender: UIBarButtonItem) {
+        let studentListVC = storyboard?.instantiateViewController(withIdentifier: "StudentAddViewController") as! StudentAddViewController
+        studentListVC.isUpdate = true
+        studentListVC.indexRow = indexRow
+        studentListVC.studentDetails = studentDetails
+        self.navigationController?.pushViewController(studentListVC, animated: false)
+        
+    }
+    
+    
     
 }

@@ -14,12 +14,41 @@ class StudentAddViewController: UIViewController {
     @IBOutlet weak var collageNameTextField: UITextField!
     @IBOutlet weak var studentAddressTextField: UITextField!
     @IBOutlet weak var studentEmailTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
+    var isUpdate = false
+    var indexRow = Int()
+    var studentDetails : Student?
     //MARK: view LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        studentNameTextField.text = studentDetails?.name
+        collageNameTextField.text = studentDetails?.collage
+        studentAddressTextField.text = studentDetails?.address
+        studentEmailTextField.text = studentDetails?.email
+        saveButton.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)
 
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if isUpdate{
+            saveButton.setTitle("Update", for: .normal)
+            self.title = "Update Data"
+
+        }else{
+            saveButton.setTitle("Save", for: .normal)
+            self.title = "Save Data"
+
+        }
+        
+    }
+    
+    
+    @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     
@@ -46,7 +75,14 @@ extension StudentAddViewController{
             "studentAddress" : studentAddress,
             "studentEmail" : studentEmail
         ]
-        DatabaseHelper.shareInstance.saveStudentData(studentDict: studentDict)
+        
+        if isUpdate{
+            DatabaseHelper.shareInstance.editStudentData(studentDict: studentDict, index: indexRow)
+            isUpdate = false
+        }else{
+            DatabaseHelper.shareInstance.saveStudentData(studentDict: studentDict)
+        }
+       
     }
     
 }

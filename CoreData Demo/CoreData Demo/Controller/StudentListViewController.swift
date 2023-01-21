@@ -7,14 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StudentListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {    
 
    @IBOutlet weak var studentListTableView: UITableView!
     var arrStudent = [Student]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setUpTableView()
     }
     
@@ -22,7 +21,6 @@ class ViewController: UIViewController {
         self.arrStudent = DatabaseHelper.shareInstance.getAllStudentData()
         studentListTableView.reloadData()
     }
-    
 
     func setUpTableView(){
         let nib = UINib(nibName: "StudentTableViewCell", bundle: nil)
@@ -37,9 +35,7 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
-}
 
-extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrStudent.count
     }
@@ -57,6 +53,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let studentDetailVC = storyboard?.instantiateViewController(withIdentifier: "StudentDetailsViewController") as! StudentDetailsViewController
         studentDetailVC.studentDetails = arrStudent[indexPath.row]
+        studentDetailVC.indexRow = indexPath.row
         self.navigationController?.pushViewController(studentDetailVC, animated: true)
         
     }
