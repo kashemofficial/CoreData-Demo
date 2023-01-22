@@ -2,8 +2,15 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Student" representedClassName="Student" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String"/>
-        <attribute name="collage" optional="YES" attributeType="String"/>
+        <attribute name="college" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="StudentMoreInfo" representedClassName="StudentMoreInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="rollNo" optional="YES" attributeType="String"/>
+        <attribute name="subject1" optional="YES" attributeType="String"/>
+        <attribute name="subject2" optional="YES" attributeType="String"/>
     </entity>
 </model>

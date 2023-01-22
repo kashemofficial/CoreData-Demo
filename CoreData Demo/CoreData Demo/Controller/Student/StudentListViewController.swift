@@ -27,14 +27,12 @@ class StudentListViewController: UIViewController, UITableViewDelegate, UITableV
         studentListTableView.register(nib, forCellReuseIdentifier: "StudentTableViewCell")
         studentListTableView.delegate = self
         studentListTableView.dataSource = self
-        
     }
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem){
         let vc = storyboard?.instantiateViewController(withIdentifier: "StudentAddViewController") as! StudentAddViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrStudent.count

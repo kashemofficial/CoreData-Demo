@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CCB96FC297D2C86000FF707 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB96FA297D2C86000FF707 /* Student.storyboard */; };
+		6CCB9701297D4227000FF707 /* StudentMoreInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9700297D4227000FF707 /* StudentMoreInfoListViewController.swift */; };
+		6CCB9703297D43A4000FF707 /* StudentMoreInfoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9702297D43A4000FF707 /* StudentMoreInfoAddViewController.swift */; };
 		6CE5DF5229793DF000AE7883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5129793DF000AE7883 /* AppDelegate.swift */; };
 		6CE5DF5429793DF000AE7883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5329793DF000AE7883 /* SceneDelegate.swift */; };
 		6CE5DF5629793DF000AE7883 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5529793DF000AE7883 /* StudentListViewController.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CCB96FB297D2C86000FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "CoreData Demo/Controller/Base.lproj/Student.storyboard"; sourceTree = "<group>"; };
+		6CCB9700297D4227000FF707 /* StudentMoreInfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMoreInfoListViewController.swift; sourceTree = "<group>"; };
+		6CCB9702297D43A4000FF707 /* StudentMoreInfoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMoreInfoAddViewController.swift; sourceTree = "<group>"; };
 		6CE5DF4E29793DF000AE7883 /* CoreData Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE5DF5129793DF000AE7883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE5DF5329793DF000AE7883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CCB96FD297D2C93000FF707 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				6CE5DF5729793DF000AE7883 /* Main.storyboard */,
+				6CCB96FA297D2C86000FF707 /* Student.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		6CCB96FE297D419D000FF707 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				6CE5DF5529793DF000AE7883 /* StudentListViewController.swift */,
+				6CE6A066297AF385004E357A /* StudentDetailsViewController.swift */,
+				6CE5DF862979487900AE7883 /* StudentAddViewController.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		6CCB96FF297D41C1000FF707 /* StudentMoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB9700297D4227000FF707 /* StudentMoreInfoListViewController.swift */,
+				6CCB9702297D43A4000FF707 /* StudentMoreInfoAddViewController.swift */,
+			);
+			path = StudentMoreInfo;
+			sourceTree = "<group>";
+		};
 		6CE5DF4529793DF000AE7883 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +145,7 @@
 		6CE5DF5029793DF000AE7883 /* CoreData Demo */ = {
 			isa = PBXGroup;
 			children = (
+				6CCB96FD297D2C93000FF707 /* StoryBoard */,
 				6CE5DF8B297973D900AE7883 /* Cells */,
 				6CE5DF8829794C2500AE7883 /* DatabaseHelper */,
 				6CE5DF84297946D600AE7883 /* System */,
@@ -152,10 +187,8 @@
 		6CE5DF85297946E400AE7883 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6CE5DF5729793DF000AE7883 /* Main.storyboard */,
-				6CE5DF5529793DF000AE7883 /* StudentListViewController.swift */,
-				6CE6A066297AF385004E357A /* StudentDetailsViewController.swift */,
-				6CE5DF862979487900AE7883 /* StudentAddViewController.swift */,
+				6CCB96FF297D41C1000FF707 /* StudentMoreInfo */,
+				6CCB96FE297D419D000FF707 /* Student */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,6 +318,7 @@
 				6CE5DF5E29793DF100AE7883 /* Assets.xcassets in Resources */,
 				6CE5DF5929793DF000AE7883 /* Main.storyboard in Resources */,
 				6CE5DF8F2979740000AE7883 /* StudentTableViewCell.xib in Resources */,
+				6CCB96FC297D2C86000FF707 /* Student.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +348,9 @@
 				6CE5DF5229793DF000AE7883 /* AppDelegate.swift in Sources */,
 				6CE5DF5429793DF000AE7883 /* SceneDelegate.swift in Sources */,
 				6CE5DF8E2979740000AE7883 /* StudentTableViewCell.swift in Sources */,
+				6CCB9701297D4227000FF707 /* StudentMoreInfoListViewController.swift in Sources */,
 				6CE6A067297AF385004E357A /* StudentDetailsViewController.swift in Sources */,
+				6CCB9703297D43A4000FF707 /* StudentMoreInfoAddViewController.swift in Sources */,
 				6CE5DF8A29794C9F00AE7883 /* DatabaseHelper.swift in Sources */,
 				6CE5DF872979487900AE7883 /* StudentAddViewController.swift in Sources */,
 			);
@@ -353,6 +389,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		6CCB96FA297D2C86000FF707 /* Student.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CCB96FB297D2C86000FF707 /* Base */,
+			);
+			name = Student.storyboard;
+			sourceTree = "<group>";
+		};
 		6CE5DF5729793DF000AE7883 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,7 +542,7 @@
 				INFOPLIST_FILE = "CoreData Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Student;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -526,7 +570,7 @@
 				INFOPLIST_FILE = "CoreData Demo/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Student;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

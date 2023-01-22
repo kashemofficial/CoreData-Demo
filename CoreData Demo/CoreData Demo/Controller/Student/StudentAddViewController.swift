@@ -11,7 +11,7 @@ class StudentAddViewController: UIViewController {
     
     //MARK: Outlet
     @IBOutlet weak var studentNameTextField: UITextField!
-    @IBOutlet weak var collageNameTextField: UITextField!
+    @IBOutlet weak var collegeNameTextField: UITextField!
     @IBOutlet weak var studentAddressTextField: UITextField!
     @IBOutlet weak var studentEmailTextField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
@@ -24,7 +24,7 @@ class StudentAddViewController: UIViewController {
         super.viewDidLoad()
         
         studentNameTextField.text = studentDetails?.name
-        collageNameTextField.text = studentDetails?.collage
+        collegeNameTextField.text = studentDetails?.college
         studentAddressTextField.text = studentDetails?.address
         studentEmailTextField.text = studentDetails?.email
         saveButton.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)
@@ -65,13 +65,13 @@ extension StudentAddViewController{
     //MARK: Methods
     func studentSaveData(){
         guard let studentName = studentNameTextField.text else{return}
-        guard let collageName = collageNameTextField.text else{return}
+        guard let collegeName = collegeNameTextField.text else{return}
         guard let studentAddress = studentAddressTextField.text else{return}
         guard let studentEmail = studentEmailTextField.text else{return}
      
         let studentDict = [
             "studentName" : studentName,
-            "collageName" : collageName,
+            "collegeName" : collegeName,
             "studentAddress" : studentAddress,
             "studentEmail" : studentEmail
         ]

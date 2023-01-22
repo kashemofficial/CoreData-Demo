@@ -16,7 +16,7 @@ class DatabaseHelper: NSObject {
     func saveStudentData(studentDict: [String:String]){
         let student = NSEntityDescription.insertNewObject(forEntityName: "Student", into: context) as! Student
         student.name = studentDict["studentName"]
-        student.collage = studentDict["collageName"]
+        student.college = studentDict["collegeName"]
         student.address = studentDict["studentAddress"]
         student.email = studentDict["studentEmail"]
         
@@ -57,7 +57,7 @@ class DatabaseHelper: NSObject {
     func editStudentData(studentDict: [String: String], index : Int){
         let student = self.getAllStudentData()
         student[index].name = studentDict["studentName"]
-        student[index].collage = studentDict["collageName"]
+        student[index].college = studentDict["collegeName"]
         student[index].address = studentDict["studentAddress"]
         student[index].email = studentDict["studentEmail"]
         do{

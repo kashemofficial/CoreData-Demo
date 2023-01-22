@@ -17,7 +17,7 @@ class StudentTableViewCell: UITableViewCell {
     var student: Student? {
         didSet{
             studentNameLabel.text = "Name : \(student?.name ?? "")"
-            collageNameLabel.text = "Collage : \(student?.collage ?? "")"
+            collageNameLabel.text = "Collage : \(student?.college ?? "")"
             studentAddressNameLabel.text = "Address : \(student?.address ?? "")"
             studentEmailLabel.text = "Email : \(student?.email ?? "")"
         }

@@ -8,10 +8,13 @@
 import UIKit
 
 class StudentDetailsViewController: UITableViewController {
+    
     @IBOutlet weak var studentNameLabel: UILabel!
-    @IBOutlet weak var studentCollageLabel: UILabel!
+    @IBOutlet weak var studentCollegeLabel: UILabel!
     @IBOutlet weak var studentAddressLabel: UILabel!
     @IBOutlet weak var studentEmailLabel: UILabel!
+    @IBOutlet weak var studentMoreInfoLabel: UILabel!
+    
     var studentDetails: Student?
     var indexRow = Int()
     
@@ -21,7 +24,7 @@ class StudentDetailsViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         studentNameLabel.text = studentDetails?.name
-        studentCollageLabel.text = studentDetails?.collage
+        studentCollegeLabel.text = studentDetails?.college
         studentAddressLabel.text = studentDetails?.address
         studentEmailLabel.text = studentDetails?.email
     }
@@ -40,6 +43,12 @@ class StudentDetailsViewController: UITableViewController {
         
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 4{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "StudentMoreInfoListViewController") as! StudentMoreInfoListViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
 }
