@@ -198,8 +198,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFd-Uw-VWz">
-                                                    <rect key="frame" x="152" y="10" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFd-Uw-VWz">
+                                                    <rect key="frame" x="217" y="10" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -208,9 +208,8 @@
                                             <constraints>
                                                 <constraint firstItem="ixL-cb-2A7" firstAttribute="top" secondItem="uIA-Jh-7vu" secondAttribute="top" constant="10" id="S10-h7-8iZ"/>
                                                 <constraint firstItem="tFd-Uw-VWz" firstAttribute="top" secondItem="ixL-cb-2A7" secondAttribute="top" id="ivd-IQ-uV4"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tFd-Uw-VWz" secondAttribute="trailing" constant="10" id="kom-W8-s8e"/>
                                                 <constraint firstItem="ixL-cb-2A7" firstAttribute="leading" secondItem="uIA-Jh-7vu" secondAttribute="leading" constant="10" id="mvx-se-AiQ"/>
-                                                <constraint firstItem="tFd-Uw-VWz" firstAttribute="leading" secondItem="ixL-cb-2A7" secondAttribute="trailing" constant="5" id="yZD-tG-dRt"/>
+                                                <constraint firstItem="tFd-Uw-VWz" firstAttribute="leading" secondItem="ixL-cb-2A7" secondAttribute="trailing" constant="70" id="yZD-tG-dRt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

@@ -27,6 +27,14 @@ class StudentDetailsViewController: UITableViewController {
         studentCollegeLabel.text = studentDetails?.college
         studentAddressLabel.text = studentDetails?.address
         studentEmailLabel.text = studentDetails?.email
+        
+        if let students = studentDetails?.studentMoreInfo?.allObjects as? [StudentInfo]{
+            studentMoreInfoLabel.text = "\(students.count)"
+        }else{
+            studentMoreInfoLabel.text = "0"
+        }
+        
+        
     }
     
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {

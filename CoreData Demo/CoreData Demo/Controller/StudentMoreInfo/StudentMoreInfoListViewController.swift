@@ -28,6 +28,12 @@ class StudentMoreInfoListViewController: UIViewController {
         studentMoreInfoTableView.reloadData()
     }
     
+    
+    @IBAction func studentMoreInfoBackButton(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
     @IBAction func StudentMoreInfoButtonClick(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let studentInfoButtonVC = storyboard.instantiateViewController(withIdentifier: "StudentMoreInfoAddViewController") as! StudentMoreInfoAddViewController

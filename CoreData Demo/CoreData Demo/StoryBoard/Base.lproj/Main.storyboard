@@ -33,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="1984" y="-2"/>
         </scene>
-        <!--Student More Info List View Controller-->
+        <!--Student List More Info-->
         <scene sceneID="M69-H1-sJu">
             <objects>
                 <viewController storyboardIdentifier="StudentMoreInfoListViewController" id="abA-BA-0kB" customClass="StudentMoreInfoListViewController" customModule="CoreData_Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,14 @@
                             <constraint firstItem="by7-aK-FKC" firstAttribute="bottom" secondItem="m5w-af-dO4" secondAttribute="bottom" id="iCl-KJ-k4d"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DS6-kf-Pqi">
+                    <navigationItem key="navigationItem" title="Student List More Info" id="DS6-kf-Pqi">
+                        <barButtonItem key="leftBarButtonItem" id="cgr-Kx-QTb">
+                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="studentMoreInfoBackButton:" destination="abA-BA-0kB" id="0eo-h8-3md"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" id="sTa-DQ-T0m">
                             <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,7 +89,7 @@
             </objects>
             <point key="canvasLocation" x="2434" y="380"/>
         </scene>
-        <!--Student More Info Add View Controller-->
+        <!--Student MoreInfo Add-->
         <scene sceneID="Ias-Dg-Jdp">
             <objects>
                 <viewController storyboardIdentifier="StudentMoreInfoAddViewController" id="giz-6U-vPH" customClass="StudentMoreInfoAddViewController" customModule="CoreData_Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="feN-gx-ZZ7">
-                                <rect key="frame" x="20" y="139" width="353" height="40"/>
+                                <rect key="frame" x="20" y="183" width="353" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4EV-bQ-tyV"/>
                                 </constraints>
@@ -99,22 +106,22 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Roll No" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eii-dT-0LZ">
-                                <rect key="frame" x="20" y="249" width="353" height="40"/>
+                                <rect key="frame" x="20" y="293" width="353" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VLm-zR-XNi">
-                                <rect key="frame" x="20" y="304" width="353" height="40"/>
+                                <rect key="frame" x="20" y="348" width="353" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nz2-TK-LxJ">
-                                <rect key="frame" x="20" y="359" width="353" height="40"/>
+                                <rect key="frame" x="20" y="403" width="353" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKL-9k-PXy">
-                                <rect key="frame" x="166" y="439" width="61" height="35"/>
+                                <rect key="frame" x="166" y="483" width="61" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Save"/>
                                 <connections>
@@ -122,7 +129,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m9r-Mn-3mi">
-                                <rect key="frame" x="20" y="194" width="353" height="40"/>
+                                <rect key="frame" x="20" y="238" width="353" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -153,6 +160,15 @@
                             <constraint firstItem="nz2-TK-LxJ" firstAttribute="height" secondItem="feN-gx-ZZ7" secondAttribute="height" id="zN1-jh-Lgn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Student MoreInfo Add" id="tcQ-FD-XZp">
+                        <barButtonItem key="leftBarButtonItem" id="wNL-pR-Dwa">
+                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="moreInfoAddBackButton:" destination="giz-6U-vPH" id="1PJ-8m-tsa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="feN-gx-ZZ7" id="Mpm-KE-iud"/>
                         <outlet property="phoneTextField" destination="m9r-Mn-3mi" id="DJI-iB-wAC"/>
@@ -163,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1B-6p-6a1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3222" y="380"/>
+            <point key="canvasLocation" x="3859" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cnL-6W-7nU">
@@ -183,8 +199,27 @@
             </objects>
             <point key="canvasLocation" x="1742.7480916030534" y="379.57746478873241"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WpV-mY-C9Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hpj-TP-BAq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PVn-JL-PRJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="giz-6U-vPH" kind="relationship" relationship="rootViewController" id="Qch-Ly-jMk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6t-Q3-WCy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3220.6106870229005" y="379.57746478873241"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -22,6 +22,9 @@ class StudentMoreInfoAddViewController: UIViewController {
 
     }
     
+    @IBAction func moreInfoAddBackButton(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     @IBAction func saveButtonClick(_ sender: UIButton) {
         guard let studentMoreInfonames = nameTextField.text else{return}
@@ -42,6 +45,9 @@ class StudentMoreInfoAddViewController: UIViewController {
         
         DatabaseHelper.shareInstance.saveStudentMoreInfoData(studentMoreInfoDict: studentMoreInfoDict, student: mainStudent)
     
+        self.navigationController?.popViewController(animated: true)
     }
+    
+    
     
 }
