@@ -28,7 +28,6 @@ class StudentAddViewController: UIViewController {
         studentAddressTextField.text = studentDetails?.address
         studentEmailTextField.text = studentDetails?.email
         saveButton.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)
-
         
     }
     
@@ -41,7 +40,6 @@ class StudentAddViewController: UIViewController {
         }else{
             saveButton.setTitle("Save", for: .normal)
             self.title = "Save Data"
-
         }
         
     }
@@ -50,7 +48,6 @@ class StudentAddViewController: UIViewController {
     @IBAction func leftBarButtonAction(_ sender: UIBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
     }
-    
     
     //MARK: Action
     @IBAction func saveButtonAction(_ sender: UIButton) {

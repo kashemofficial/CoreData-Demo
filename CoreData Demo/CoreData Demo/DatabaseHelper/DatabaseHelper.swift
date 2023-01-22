@@ -65,8 +65,37 @@ class DatabaseHelper: NSObject {
         }catch{
             print("error in edit data")
         }
-        
     }
+    
+    func saveStudentMoreInfoData(studentMoreInfoDict: [String:String],student: Student){
+        let studentInfo = NSEntityDescription.insertNewObject(forEntityName: "StudentInfo", into: context) as! StudentInfo
+        studentInfo.names = studentMoreInfoDict["studentMoreInfonames"]
+        studentInfo.phone = studentMoreInfoDict["studentMoreInfophone"]
+        studentInfo.rollno = studentMoreInfoDict["studentMoreInforollno"]
+        studentInfo.subject1 = studentMoreInfoDict["studentMoreInfosubject1"]
+        studentInfo.subject2 = studentMoreInfoDict[            "studentMoreInfosubject2"]
+        studentInfo.universities = student
+        
+        do{
+            try context.save()
+        }catch let err{
+            print("Student save error: \(err.localizedDescription)")
+        }
+
+    }
+    
+    func getAllStudentMoreInfoData() -> [StudentInfo]{
+        var arrStudentInfo = [StudentInfo]()
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "StudentInfo")
+        do{
+            arrStudentInfo = try context.fetch(fetchRequest) as! [StudentInfo]
+        }catch let err{
+            print("Error in studntInfo fetch:  \(err.localizedDescription)")
+        }
+        
+        return arrStudentInfo
+    }
+    
     
     
 }

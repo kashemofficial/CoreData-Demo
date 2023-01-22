@@ -40,8 +40,30 @@
                     <view key="view" contentMode="scaleToFill" id="wXz-G1-U1V">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m5w-af-dO4">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="uHp-Z8-Bmo">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uHp-Z8-Bmo" id="pcd-rA-dGG">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="by7-aK-FKC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="by7-aK-FKC" firstAttribute="trailing" secondItem="m5w-af-dO4" secondAttribute="trailing" id="QcJ-2N-Ze1"/>
+                            <constraint firstItem="m5w-af-dO4" firstAttribute="leading" secondItem="by7-aK-FKC" secondAttribute="leading" id="RM2-MS-5ex"/>
+                            <constraint firstItem="m5w-af-dO4" firstAttribute="top" secondItem="by7-aK-FKC" secondAttribute="top" id="WXW-0x-J46"/>
+                            <constraint firstItem="by7-aK-FKC" firstAttribute="bottom" secondItem="m5w-af-dO4" secondAttribute="bottom" id="iCl-KJ-k4d"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DS6-kf-Pqi">
                         <barButtonItem key="rightBarButtonItem" id="sTa-DQ-T0m">
@@ -52,6 +74,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="studentMoreInfoTableView" destination="m5w-af-dO4" id="fIz-Ye-tX6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWe-Dh-FTu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

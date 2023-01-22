@@ -10,6 +10,12 @@
 		6CCB96FC297D2C86000FF707 /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB96FA297D2C86000FF707 /* Student.storyboard */; };
 		6CCB9701297D4227000FF707 /* StudentMoreInfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9700297D4227000FF707 /* StudentMoreInfoListViewController.swift */; };
 		6CCB9703297D43A4000FF707 /* StudentMoreInfoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9702297D43A4000FF707 /* StudentMoreInfoAddViewController.swift */; };
+		6CCB970B297D91A2000FF707 /* StudnetMoreInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9709297D91A2000FF707 /* StudnetMoreInfoTableViewCell.swift */; };
+		6CCB970C297D91A2000FF707 /* StudnetMoreInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CCB970A297D91A2000FF707 /* StudnetMoreInfoTableViewCell.xib */; };
+		6CCB9711297DABBB000FF707 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB970F297DABBB000FF707 /* Student+CoreDataClass.swift */; };
+		6CCB9712297DABBB000FF707 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9710297DABBB000FF707 /* Student+CoreDataProperties.swift */; };
+		6CCB9718297DB6DA000FF707 /* StudentInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9716297DB6DA000FF707 /* StudentInfo+CoreDataClass.swift */; };
+		6CCB9719297DB6DA000FF707 /* StudentInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCB9717297DB6DA000FF707 /* StudentInfo+CoreDataProperties.swift */; };
 		6CE5DF5229793DF000AE7883 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5129793DF000AE7883 /* AppDelegate.swift */; };
 		6CE5DF5429793DF000AE7883 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5329793DF000AE7883 /* SceneDelegate.swift */; };
 		6CE5DF5629793DF000AE7883 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5DF5529793DF000AE7883 /* StudentListViewController.swift */; };
@@ -48,6 +54,12 @@
 		6CCB96FB297D2C86000FF707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "CoreData Demo/Controller/Base.lproj/Student.storyboard"; sourceTree = "<group>"; };
 		6CCB9700297D4227000FF707 /* StudentMoreInfoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMoreInfoListViewController.swift; sourceTree = "<group>"; };
 		6CCB9702297D43A4000FF707 /* StudentMoreInfoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentMoreInfoAddViewController.swift; sourceTree = "<group>"; };
+		6CCB9709297D91A2000FF707 /* StudnetMoreInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudnetMoreInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6CCB970A297D91A2000FF707 /* StudnetMoreInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudnetMoreInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6CCB970F297DABBB000FF707 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CCB9710297DABBB000FF707 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CCB9716297DB6DA000FF707 /* StudentInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StudentInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6CCB9717297DB6DA000FF707 /* StudentInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StudentInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6CE5DF4E29793DF000AE7883 /* CoreData Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE5DF5129793DF000AE7883 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE5DF5329793DF000AE7883 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +134,51 @@
 			path = StudentMoreInfo;
 			sourceTree = "<group>";
 		};
+		6CCB9708297D87C2000FF707 /* CoreDataClass */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB9715297DB6A7000FF707 /* StudentInfo */,
+				6CCB9713297DABEE000FF707 /* Student */,
+			);
+			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		6CCB970D297D91A7000FF707 /* StudentCell */ = {
+			isa = PBXGroup;
+			children = (
+				6CE5DF8C2979740000AE7883 /* StudentTableViewCell.swift */,
+				6CE5DF8D2979740000AE7883 /* StudentTableViewCell.xib */,
+			);
+			path = StudentCell;
+			sourceTree = "<group>";
+		};
+		6CCB970E297D91BA000FF707 /* StudnetMoreInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB9709297D91A2000FF707 /* StudnetMoreInfoTableViewCell.swift */,
+				6CCB970A297D91A2000FF707 /* StudnetMoreInfoTableViewCell.xib */,
+			);
+			path = StudnetMoreInfoCell;
+			sourceTree = "<group>";
+		};
+		6CCB9713297DABEE000FF707 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB970F297DABBB000FF707 /* Student+CoreDataClass.swift */,
+				6CCB9710297DABBB000FF707 /* Student+CoreDataProperties.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		6CCB9715297DB6A7000FF707 /* StudentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6CCB9716297DB6DA000FF707 /* StudentInfo+CoreDataClass.swift */,
+				6CCB9717297DB6DA000FF707 /* StudentInfo+CoreDataProperties.swift */,
+			);
+			path = StudentInfo;
+			sourceTree = "<group>";
+		};
 		6CE5DF4529793DF000AE7883 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +202,7 @@
 		6CE5DF5029793DF000AE7883 /* CoreData Demo */ = {
 			isa = PBXGroup;
 			children = (
+				6CCB9708297D87C2000FF707 /* CoreDataClass */,
 				6CCB96FD297D2C93000FF707 /* StoryBoard */,
 				6CE5DF8B297973D900AE7883 /* Cells */,
 				6CE5DF8829794C2500AE7883 /* DatabaseHelper */,
@@ -204,8 +262,8 @@
 		6CE5DF8B297973D900AE7883 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				6CE5DF8C2979740000AE7883 /* StudentTableViewCell.swift */,
-				6CE5DF8D2979740000AE7883 /* StudentTableViewCell.xib */,
+				6CCB970E297D91BA000FF707 /* StudnetMoreInfoCell */,
+				6CCB970D297D91A7000FF707 /* StudentCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -314,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCB970C297D91A2000FF707 /* StudnetMoreInfoTableViewCell.xib in Resources */,
 				6CE5DF6129793DF100AE7883 /* LaunchScreen.storyboard in Resources */,
 				6CE5DF5E29793DF100AE7883 /* Assets.xcassets in Resources */,
 				6CE5DF5929793DF000AE7883 /* Main.storyboard in Resources */,
@@ -344,15 +403,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE5DF5629793DF000AE7883 /* StudentListViewController.swift in Sources */,
+				6CCB970B297D91A2000FF707 /* StudnetMoreInfoTableViewCell.swift in Sources */,
 				6CE5DF5C29793DF000AE7883 /* CoreData_Demo.xcdatamodeld in Sources */,
+				6CCB9711297DABBB000FF707 /* Student+CoreDataClass.swift in Sources */,
 				6CE5DF5229793DF000AE7883 /* AppDelegate.swift in Sources */,
+				6CCB9718297DB6DA000FF707 /* StudentInfo+CoreDataClass.swift in Sources */,
 				6CE5DF5429793DF000AE7883 /* SceneDelegate.swift in Sources */,
 				6CE5DF8E2979740000AE7883 /* StudentTableViewCell.swift in Sources */,
 				6CCB9701297D4227000FF707 /* StudentMoreInfoListViewController.swift in Sources */,
+				6CCB9712297DABBB000FF707 /* Student+CoreDataProperties.swift in Sources */,
 				6CE6A067297AF385004E357A /* StudentDetailsViewController.swift in Sources */,
 				6CCB9703297D43A4000FF707 /* StudentMoreInfoAddViewController.swift in Sources */,
 				6CE5DF8A29794C9F00AE7883 /* DatabaseHelper.swift in Sources */,
 				6CE5DF872979487900AE7883 /* StudentAddViewController.swift in Sources */,
+				6CCB9719297DB6DA000FF707 /* StudentInfo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
